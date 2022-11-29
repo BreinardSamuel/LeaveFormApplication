@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;  
+ }
+ body{
+    background-image: radial-gradient(white,brown);
+ }
+ #flexContainer{
+    display: flex;
+    justify-content: center;
+ }
+ #leaveFormContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 40px;
+    margin-top: 6%;
+    background-color:white;
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px;
+ }
+ #employeeLeaveForm{
+   margin-top: 20px;
+   margin-bottom: 80px;
+   word-spacing: 20px;
+   display: flex;
+   justify-content: center;
+ }
+ 
+ #leaveFormContainer{
+    border: 2px solid;
+    width: 40%;
+    height: max-content;
+   
+ }
+ #dayOff{
+    margin-bottom: 30px;
+ }
+ .formRows{
+    margin-bottom: 50px;
+ }
+ 
+ .label{
+    width: 200px;
+    display: inline-block;
+ }
+ textarea{
+    display: inline-block;
+ 
+ }
+ #userName{
+    width: 50%;
+ }
+ #nameError{
+   font-size: 15px;
+   padding-top: 2%;
+   display: flex;
+   position: relative;
+   right: 10%;
+   justify-content: flex-end;
+   color:red;
+ 
+ }
+ #projectName{
+    width: 50%;
+ }
+ #projectNameError{
+    font-size: 15px;
+    padding-top: 2%;
+    display: flex;
+    position: relative;
+   right: 10%;
+    justify-content: flex-end;
+    color:red;
+ }
+ #startDate{
+    width: 50%;
+ }
+ #startDateError{
+    font-size: 15px;
+    padding-top: 2%;
+    display: flex;
+    justify-content: flex-end;
+    color:red;
+    position: relative;
+   right: 10%;
+ 
+ }
+ #endDate{
+    width: 50%;
+ }
+ #endDateError{
+    font-size: 15px;
+    padding-top: 2%;
+    display: flex;
+    justify-content: flex-end;
+    color:red;
+    position: relative;
+   right: 10%;
+ 
+ }
+ #spanForRadioButtons{
+     display: flex;
+ }
+ #radioButtons{
+     display: flex;
+     justify-content: right;
+     position: relative;
+     bottom: 1rem;
+     margin-bottom: 30px;
+ }
+ #radioButtonsError{
+    font-size: 15px;
+    padding-top: 2%;
+    display: flex;
+    justify-content: flex-end;
+    color:red;
+    position: relative;
+   right: 10%;
+ }
+ #typeOfLeave{
+    width: 50%;
+ }
+ #typeOfLeaveError{
+    font-size: 15px;
+    padding-top: 2%;
+    display: flex;
+    justify-content: flex-end;
+    color:red;
+    position: relative;
+   right: 10%;
+ }
+ #reasonError{
+    font-size: 15px;
+   display: flex;
+   justify-content: flex-end;
+   color:red;
+   position: relative;
+   right: 10%;
+ }
+ #totalcharacters{
+    display: flex;
+    justify-content: right;
+ }
+ #remainingCharacters{
+     display: flex;
+     justify-content: flex-end;
+     font-size: 15px;
+ }
+ textarea{
+    width: 50%;
+ }
+ button{
+   width: 80%;
+   padding: 10px;
+   border-radius: 20px;
+   background-color: brown;
+   color: white;
+ }
+ #button{
+   display: flex;
+   justify-content: center;
+ }
+ 
+ /*! For table */
+ 
+ #tableContainer{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 50px 0px;
+ }
+ table{
+     background-color: white;
+ }
+ th,tr,td{
+    padding: 10px;
+    border-color: brown;
+ }
+ 
+ 
+ 
+

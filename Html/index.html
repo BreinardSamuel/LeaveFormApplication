@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Form</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+ 
+<body>
+    <!-- ! Heading -->
+ 
+    </div>
+    <div id="flexContainer">
+        <div id="leaveFormContainer">
+            <form action="" id="form">
+                <h1 id="employeeLeaveForm">Employee Leave Form</h1>
+                <!-- ! Name field -->
+ 
+                <div class="formRows">
+                    <span>
+                        <label for="userName" class="label">Name</label>
+                    </span>
+                    <span id="spanForUserName">
+                        <input type="text" id="userName" value="" onkeyup="lettersonly(this)">
+                    </span>
+                    <div id="nameError"></div>
+                </div>
+ 
+                <!--! Project name -->
+ 
+                <div class="formRows">
+                    <span>
+                        <label for="projectName" class="label">Project Name</label>
+                    </span>
+                    <span id="spanForProjectName">
+                        <input type="text" id="projectName" value="" onkeyup="lettersonly(this)">
+                    </span>
+                    <div id="projectNameError"></div>
+                </div>
+ 
+                <!-- ! Start date -->
+ 
+                <div class="formRows">
+                    <span>
+                        <label for="startDate" class="label">Start Date</label>
+                    </span>
+                    <span id="spanForStartdate">
+                        <input type="date" id="startDate" onchange="dateChange(this)">
+                    </span>
+                    <div id="startDateError"></div>
+                </div>
+ 
+                <!-- ! End date -->
+ 
+                <div class="formRows">
+                    <span>
+                        <label for="endDate" class="label">End Date</label>
+                    </span>
+                    <span id="spanForEndDate">
+                        <input type="date" id="endDate" min="2022-03-12">
+                    </span>
+                    <div id="endDateError"></div>
+                </div>
+ 
+                <!-- ! Radio -->
+                <span id="spanForRadioButtons">
+                    <label for="meridian" class="label">Day Off</label>
+                </span>
+ 
+                <div id="radioButtons">
+                    <span>
+                        <input type="radio" id="am" name="meridian">
+                        <label for="meridian">AM</label>
+                    </span>
+                    <span>
+                        <input type="radio" id="pm" name="meridian">
+                        <label for="meridian">PM</label>
+                    </span>
+                    <span>
+                        <input type="radio" id="allDay" name="meridian">
+                        <label for="meridian">All day</label>
+                        <div id="radioButtonsError"></div>
+                    </span>
+                </div>
+ 
+                <!-- ! Type of leave -->
+ 
+                <div class="formRows">
+                    <Span>
+                        <label for="typeOfLeave" class="label">Type of leaves</label>
+                    </Span>
+                    <span>
+                        <select id="typeOfLeave">
+                            <Option selected>Personal Leave</Option>
+                            <Option>Floating</Option>
+                            <Option>Comp Off</Option>
+                        </select>
+                    </span>
+                    <div id="typeOfLeaveError"></div>
+                </div>
+ 
+                <!--  ! Reason field -->
+ 
+                <div class="formRows">
+                    <span >
+                        <label for="reason" class="label">Reason</label>
+                    </span>
+                    <span id="textArea">
+                        <textarea name="reason" id="reason" cols="" maxlength="100" rows="10"></textarea>
+                    </span>
+                    <div id="reasonError"></div>
+                    <div id="remainingCharacters"></div>
+                </div>
+ 
+                <!--     ! submit button -->
+ 
+                <div id="button">
+                    <button type="button" onclick="proceed()" id="buttonSubmit">Proceed</button>
+                </div>
+            </form>
+        </div>
+    </div>
+ 
+ <div id="tableContainer">
+    <div id="tablebox">
+        <table border="2" id="table">
+            <thead>
+                <td>Name</td>
+                <td>Project Name</td>
+                <td>Start date</td>
+                <td>End Date</td>
+                <td>Type of Leave</td>
+                <td>Reason</td>
+            </thead>
+            <tr>
+            </tr>
+        </table>
+    </div>
+ </div>
+
+</body>
+<script src="../javascript/dynamictable.js"></script>
+<script src="../javascript/form.js"></script>
+<script src="../javascript/validation.js"></script>
+ 
+</html>
+ 
+
